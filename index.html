@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr FUNKTASTIC</title>
 
+  <style>
+    :root {
+      --turquoise: #39858b;
+      --orange: #c85c1b;
+      --yellow: #f5b52d;
+      --dark: #18262b;
+      --cream: #fff5df;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, #39858b 0, #245e67 38%, transparent 39%),
+        linear-gradient(135deg, #18262b 0%, #213940 55%, #c85c1b 180%);
+    }
+
+    .page {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 35px 20px 45px;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: min(82vw, 430px);
+      max-height: 430px;
+      object-fit: contain;
+      margin: 0 auto 18px;
+      filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.35));
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      color: var(--yellow);
+      font-size: clamp(2.1rem, 8vw, 4.5rem);
+      line-height: 0.95;
+      letter-spacing: 0.04em;
+      text-shadow: 4px 4px 0 var(--dark);
+    }
+
+    .description {
+      max-width: 570px;
+      margin: 0 auto 28px;
+      font-size: 1.05rem;
+      line-height: 1.55;
+      font-style: italic;
+    }
+
+    .links {
+      display: grid;
+      gap: 13px;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .link {
+      display: block;
+      padding: 16px 22px;
+      border: 3px solid var(--yellow);
+      border-radius: 50px;
+      color: var(--cream);
+      background: rgba(24, 38, 43, 0.88);
+      box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.28);
+      text-decoration: none;
+      font-size: 1.08rem;
+      font-weight: bold;
+      transition: transform 0.18s ease, background 0.18s ease;
+    }
+
+    .link:hover,
+    .link:focus {
+      color: var(--dark);
+      background: var(--yellow);
+      transform: translateY(-3px);
+    }
+
+    .link span {
+      margin-right: 8px;
+      font-size: 1.25rem;
+    }
+
+    .coming-soon {
+      border-color: #9ba9a7;
+      color: #cbd3ca;
+      background: rgba(24, 38, 43, 0.55);
+      cursor: default;
+      box-shadow: none;
+    }
+
+    .coming-soon:hover {
+      color: #cbd3ca;
+      background: rgba(24, 38, 43, 0.55);
+      transform: none;
+    }
+
+    footer {
+      margin-top: 32px;
+      color: #dbe5d8;
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <img
+      class="logo"
+      src="logo.png"
+      alt="Logo du groupe Dr FUNKTASTIC"
+    >
+
+    <h1>Dr FUNKTASTIC</h1>
+
+    <p class="description">
+      Le Dr Funktastic a mis au point sa formule magique :
+      un savant cocktail de funk, blues, soul et le légendaire saxophone
+      du Docteur en personne pour faire groover les foules.<br><br>
+
+      Le quatuor déroule un set survitaminé de compositions originales.<br>
+      Traitement de choc pour un trip fantastique.
+    </p>
+
+    <nav class="links" aria-label="Liens du groupe">
+      <a class="link" href="https://open.spotify.com/intl-fr/artist/0mqa0ntbor79ZbPmHceQn6" target="_blank" rel="noopener">
+        <span>♫</span> Écouter sur Spotify
+      </a>
+
+      <div class="link coming-soon">
+        <span>♫</span> Deezer — bientôt disponible
+      </div>
+
+      <a class="link" href="https://music.apple.com/fr/artist/dr-funktastic/1816099886" target="_blank" rel="noopener">
+        <span>♫</span> Écouter sur Apple Music
+      </a>
+
+      <a class="link" href="https://www.youtube.com/@drfunktastic7212" target="_blank" rel="noopener">
+        <span>▶</span> Voir sur YouTube
+      </a>
+
+      <a class="link" href="https://www.instagram.com/dr_funktastic/" target="_blank" rel="noopener">
+        <span>◎</span> Suivre sur Instagram
+      </a>
+
+      <a class="link" href="https://www.facebook.com/p/Dr-Funktastic-100084882862506/" target="_blank" rel="noopener">
+        <span>f</span> Suivre sur Facebook
+      </a>
+    </nav>
+
+    <footer>
+      Dr FUNKTASTIC — Funk, blues, soul & saxophone
+    </footer>
+  </main>
+</body>
+</html>
